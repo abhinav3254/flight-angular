@@ -1,16 +1,83 @@
-<form class="row g-3 card">
-    <div class="custom-row">
-        <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Flight Number</label>
-            <input type="number" ngModel name="flightNumber" class="form-control" id="flightNumber"
-                placeholder="Flight Number">
+<div class="top-card">
+    <form class="row g-3 card">
+        <div class="custom-row">
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Flight Number</label>
+                <input type="number" ngModel name="flightNumber" class="form-control" id="flightNumber"
+                    placeholder="Flight Number">
+            </div>
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Flight Number</label>
+                <input type="number" ngModel name="flightNumber" class="form-control" id="flightNumber"
+                    placeholder="Flight Number">
+            </div>
         </div>
-        <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Flight Number</label>
-            <input type="number" ngModel name="flightNumber" class="form-control" id="flightNumber"
-                placeholder="Flight Number">
+
+
+        <div class="custom-row">
+            <mat-form-field>
+                <mat-label>Origin</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Destination</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                </mat-select>
+            </mat-form-field>
         </div>
-    </div>
-    <label for="inputPassword5" class="form-label">Airline</label>
-    <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-</form>
+
+        <div class="custom-row">
+            <mat-form-field>
+                <mat-label>Arrival Terminal</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Departure Terminal</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="hold-it">
+            <mat-form-field>
+                <mat-label>Aircraft Type</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="wrap-up">
+            <div class="mb-3 one">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Airline">
+            </div>
+
+            <div class="custom-row">
+                <div class="col-auto two">
+                    <input type="number" ngModel name="totalSeats" class="form-control" id="flightNumber"
+                        placeholder="Total Seats">
+                </div>
+                <div class="col-auto two">
+                    <input type="number" ngModel name="ticketPrice" class="form-control" id="flightNumber"
+                        placeholder="Ticket Price">
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</div>

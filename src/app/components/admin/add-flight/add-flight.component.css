@@ -1,4 +1,43 @@
+.top-card {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+form {
+    width: 75%;
+    margin: 2rem auto;
+}
+
 .custom-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.custom-row mat-form-field {
+    width: 100%;
+    margin: 0 1rem;
+}
+
+.hold-it {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.hold-it mat-form-field {
+    width: 100%;
+}
+
+.col-auto {
+    margin: 0.2rem 1rem;
+}
+
+
+.one {
+    margin: 0.2rem 1rem;
+}
+
+.two {
+    margin: 0.2rem 1rem;
 }

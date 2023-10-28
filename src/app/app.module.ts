@@ -14,6 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddFlightComponent } from './components/admin/add-flight/add-flight.component';
 import { AllFlightsComponent } from './components/admin/all-flights/all-flights.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component'
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NgxMatDatetimePickerModule, NgxMatTimepickerModule } from '@angular-material-components/datetime-picker';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,11 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component'
     MatCardModule,
     MatFormFieldModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    NgxMatDatetimePickerModule,
+    NgxMatTimepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
